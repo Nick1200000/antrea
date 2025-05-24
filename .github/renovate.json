@@ -1,0 +1,46 @@
+{
+  "extends": ["config:base"],
+  "enabledManagers": ["gomod", "github-actions"],
+  "open-pull-requests-limit": 5,
+  "labels": ["dependencies"],
+  "schedule": ["daily"],
+  "dependencyDashboard": true,
+  "platformAutomerge": true,
+  "baseBranches": ["main", "release-1.15", "release-1.14", "release-1.13", "release-test"],
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["^golang.org/x"],
+      "groupName": "golang.org/x modules"
+    },
+    {
+      "matchPackagePatterns": ["^github.com/prometheus/"],
+      "groupName": "prometheus"
+    },
+    {
+      "matchPackagePatterns": [
+        "^github.com/onsi/ginkgo/v2",
+        "^github.com/onsi/gomega"
+      ],
+      "groupName": "ginkgo"
+    },
+    {
+      "matchPackagePatterns": [
+        "^k8s.io/",
+        "^sigs.k8s.io/",
+        "^github.com/containernetworking/",
+        "^github.com/k8snetworkplumbingwg/",
+        "^github.com/vmware/go-ipfix",
+        "^github.com/TomCodeLV/OVSDB-golang-lib",
+        "^github.com/aws/",
+        "^antrea.io/ofnet",
+        "^antrea.io/libOpenflow",
+        "^github.com/ClickHouse/clickhouse-go/v2"
+      ],
+      "allowedVersions": "<0.0.0"
+    }
+  ],
+  "regexManagers": [],
+  "onboardingConfig": {
+    "extends": ["config:base"]
+  }
+}
