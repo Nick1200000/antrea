@@ -3,7 +3,7 @@ module antrea.io/antrea
 go 1.24.0
 
 require (
-	antrea.io/libOpenflow v0.15.0
+	antrea.io/libOpenflow v0.17.0
 	antrea.io/ofnet v0.14.0
 	github.com/ClickHouse/clickhouse-go/v2 v2.6.1
 	github.com/DATA-DOG/go-sqlmock v1.5.2
@@ -51,7 +51,7 @@ require (
 	github.com/spf13/afero v1.14.0
 	github.com/spf13/cobra v1.9.1
 	github.com/spf13/pflag v1.0.6
-	github.com/stretchr/testify v1.10.0
+	github.com/stretchr/testify v1.11.1
 	github.com/ti-mo/conntrack v0.5.1
 	github.com/vishvananda/netlink v1.3.0
 	github.com/vmware/go-ipfix v0.14.0
