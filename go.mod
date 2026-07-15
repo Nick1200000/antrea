@@ -1,6 +1,6 @@
 module antrea.io/antrea
 
-go 1.24.0
+go 1.25
 
 require (
 	antrea.io/libOpenflow v0.15.0
@@ -80,7 +80,7 @@ require (
 	k8s.io/kube-openapi v0.0.0-20240228011516-70dd3763d340
 	k8s.io/kubectl v0.31.1
 	k8s.io/kubelet v0.31.1
-	k8s.io/utils v0.0.0-20240902221715-702e33fdd3c3
+	k8s.io/utils v0.0.0-20260707023825-cf1189d6abe3
 	sigs.k8s.io/controller-runtime v0.19.0
 	sigs.k8s.io/mcs-api v0.1.0
 	sigs.k8s.io/network-policy-api v0.1.1
